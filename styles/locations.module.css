@@ -1,0 +1,181 @@
+.locationsSection,
+.locationsNotListedSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locationsSectionImageContainer {
+    width: 19.4375rem;
+    height: 9.5rem;
+    margin-top: 4.5rem;
+    margin-bottom: 2.5rem;
+    background-image: url(/images/world-map-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.locationsCard {
+    background: var(--third-background-color);
+    width: 82%;
+    height: 4.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.locationsNotListedSection {
+    width: 82%;
+    margin: 0 auto;
+}
+
+.locationsNotListedSectionHeading {
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.locationsNotListedSectionText {
+    margin-bottom: 2rem;
+}
+
+.locationsNotListedSectionBtn {
+    margin-bottom: 4.5rem;
+}
+
+@media(min-width:48rem) {
+    .locationsSectionImageContainer {
+        position: relative;
+        width: 43.0625rem;
+        height: 21.0625rem;
+        margin-top: 9rem;
+        margin-bottom: 4rem;
+        background-image: url(/images/world-map-tablet.png);
+    }
+
+    .locationsCard {
+        position: relative;
+        width: 7.5rem;
+        height: 2.5rem;
+        background-color: var(--second-color);
+    }
+
+    .locationsCard::after{
+        content: "";
+        position: absolute;
+        bottom: -0.5625rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 0.625rem solid transparent;
+        border-right: 0.625rem solid transparent;
+        border-top: 0.625rem solid var(--second-color);
+    }
+
+    .locationsCard1 {
+        bottom: 22.1875rem;
+        right: 11.875rem;
+    }
+
+    .locationsCard2{
+        bottom: 27.625rem;
+        right: 2.8125rem;
+    }
+
+    .locationsCard3{
+        bottom: 22.1875rem;
+        left: 12.1875rem;
+    }
+
+    .locationsCard4{
+        bottom: 32.1875rem;
+        left: 15.3125rem;
+    }
+
+    .locationsCard h4 {
+        font-size: 0.8125rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+        letter-spacing: -0.0363rem;
+    }
+
+    .locationsNotListedSectionHeading {
+        margin-top: -11.25rem;
+        margin-bottom: 2.5rem;
+        max-width: 28.5625rem;
+    }
+
+    .locationsNotListedSectionText {
+        max-width: 35.8125rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .locationsNotListedSectionBtn {
+        margin-bottom: 7.5rem;
+    }
+}
+
+@media(min-width:75rem) {
+    .locationsSectionImageContainer {
+        width: 69.375rem;
+        height: 33.9375rem;
+        margin-top: 7.5rem;
+        margin-bottom: 0rem;
+        background-image: url(/images/world-map-desktop.png);
+    }
+
+    .locationsCard {
+        width: 11.8125rem;
+        height: 5.5rem;
+    }
+
+    .locationsCard1 {
+        bottom: 29.6875rem;
+        right: 19.6875rem;
+    }
+
+    .locationsCard2{
+        bottom: 40rem;
+        right: 4.375rem;
+    }
+
+    .locationsCard3{
+        bottom: 31.875rem;
+        left: 20rem;
+    }
+
+    .locationsCard4{
+        bottom: 48.75rem;
+        left: 24.0625rem;
+    }
+
+    .locationsCard h4 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+        letter-spacing: -0.067rem;
+    }
+
+    .locationsNotListedSection {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -15.625rem;
+        margin-bottom: 7.625rem;
+    }
+
+    .locationsNotListedSectionHeading {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        max-width: 21.9375rem;
+    }
+
+    .locationsNotListedSectionText {
+        max-width: 35.8125rem;
+        margin-bottom: 0rem;
+        text-align: left;
+    }
+
+    .locationsNotListedSectionBtn {
+        margin-bottom: 0rem;
+    }
+}

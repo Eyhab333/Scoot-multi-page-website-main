@@ -1,0 +1,140 @@
+/* typography */
+
+.footerHeader,
+.footerSubheader {
+    color: var(--main-color);
+}
+
+
+@media(min-width:48rem) {
+    .footerHeader {
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: -0.1339rem;
+    }
+}
+
+/* end typography */
+.footer {
+    width: 100vw;
+}
+
+.footerHeader {
+    margin:0rem auto 2.5rem auto;
+    max-width: 19.4375rem;
+}
+.footerDownloadSectionWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 23.4375rem;
+    background-color: var(--third-color);
+    background-image: url('/patterns/semi-circles.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right -9.375rem;
+    padding-top: 5.5rem;
+}
+
+.footerSignupIconWrapper {
+    margin: 0rem auto 0rem auto;
+}
+
+.footerSignupIcons {
+    display: inline-block;
+}
+
+.footerSignupIcons:first-of-type {
+    margin-right: 0.8125rem;
+}
+
+.footerLinkWrapper {
+    background: var(--footer-color);
+    height: 27.375rem;
+    padding-top: 4rem;
+}
+
+.footerSubheader {
+    margin-bottom: 2.5625rem;
+}
+
+.footerNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerNavLink {
+    margin: 0;
+}
+.footerSocialLinksWrapper {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 4.3125rem;
+}
+
+@media(min-width:48rem) {
+    .footerHeader {
+        max-width: 28.5625rem;
+    }
+
+    .footerLinkWrapper {
+        height: 6rem;
+        padding-top: 0rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .footerNav{
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        width: 75%;
+    }
+
+    .footerSubheader {
+        margin-bottom: 0rem;
+        margin-left: 2.5rem;
+        margin-right: 3.625rem;
+    }
+
+    .footerSocialLinksWrapper {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 0rem;
+        width: 7.5rem;
+        margin-left: auto;
+        margin-right: 2.5rem;
+    }
+}
+
+@media(min-width:90rem) {
+    .footer {
+        width: 100vw;
+    }
+
+    .footerDownloadSectionWrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 18.75rem;
+    }
+    .footerHeader {
+        max-width: 25.9375rem;
+        text-align: left;
+        margin-left: 10.3125rem;
+        margin-right: 21rem;
+    }
+    
+    .footerSignupIconWrapper {
+        margin-left: 7.0625rem;
+    }
+
+    .footerSubheader {
+        margin-left: 10.5rem;
+    }
+
+    .footerNav{
+        width: 71.5%;
+    }
+}

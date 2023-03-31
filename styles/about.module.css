@@ -1,0 +1,91 @@
+.aboutSection {
+    margin-top: 7.5rem;
+    margin-bottom: 9.0625rem;
+}
+
+.aboutFaqSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 10%;
+}
+
+.aboutDropDownSectionWrapper {
+    width: 100%;
+}
+.aboutDropDownSubSectionWrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.aboutFaqDetails {
+    text-align: center;
+    background-color: var(--second-background-color);
+    margin-bottom: 1rem;
+    padding: 2rem 0%;
+    width: 100%;
+}
+
+.aboutFaqSummary{
+    list-style-type: none;
+    position: relative;
+    margin: 0 auto;
+    max-width: 84.6%;
+}
+
+.aboutFaqArrow {
+    position: absolute;
+    top: 38%;
+    left: 95%;
+}
+
+.aboutFaqLabel {
+    display: block;
+    margin: 3rem auto 2rem auto;
+}
+
+.aboutFaqDetails p {
+    margin: 1.5rem auto 0 auto;
+    max-width: 89.6%;
+    text-align: left;
+}
+.aboutDropDownSectionWrapper:last-of-type {
+    margin-bottom: 7.5rem;
+}
+
+@media(min-width: 48rem) {
+    .aboutFaqLabel {
+        margin-top: 4.25rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        letter-spacing: -0.1116rem;
+    }
+}
+
+@media(min-width: 75rem){
+    
+    .aboutDropDownSectionWrapper {
+        display: flex;
+        margin-top: 4rem;
+    }
+
+    .aboutDropDownSubSectionWrapper {
+        padding: 0;
+        margin-left: auto;
+        width: 45.625rem;
+    }
+
+    .aboutFaqLabel {
+        margin-top: 0;
+        width: 21.875rem;
+    }
+
+    .aboutFaqDetails {
+        width: 45.625rem;
+    }
+
+    .aboutDropDownSectionWrapper:last-of-type {
+        margin-bottom: 10rem;
+    }
+}

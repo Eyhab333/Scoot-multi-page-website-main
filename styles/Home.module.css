@@ -1,0 +1,89 @@
+.main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 7.5rem;
+}
+
+/* process cards section*/
+
+.processOuterWrapper {
+    width: 83%;
+    padding-top: 7.5rem;
+}
+
+.processCard {
+    display: grid; 
+    justify-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+@media(min-width:48rem) {
+    .main {
+        margin-bottom: 6.5rem;
+    }
+    .processOuterWrapper {
+        background-image: url(/patterns/vertical-blue-line.png);
+        background-repeat: no-repeat;
+        background-position: left 2.4688rem bottom 9.375rem;
+    }
+
+    .processCard {
+        grid-template-areas: 
+        "icon heading"
+        "icon text";
+        justify-items: start;
+    }
+
+    .processIcon{
+        grid-area: icon;
+        margin-right: 4.9375rem;
+    }
+
+    .processHeading {
+        grid-area: heading;
+    }
+
+    .processText {
+        grid-area: text;
+        text-align: left;
+    }
+}
+
+
+@media(min-width:75rem) {
+    .main {
+        margin-bottom: 12.5rem;
+    }
+    .processOuterWrapper {
+        background-image: url(/patterns/horizontal-blue-line.png);
+        background-position: top 10rem right 24.375rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1.875rem;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .processCard {
+        grid-template-areas: 
+        "icon"
+        "heading"
+        "text";
+        max-width: 21.875rem;
+    }
+}
+
+@media(min-width:87.5rem) {
+    .processOuterWrapper {
+        background-position: top 10rem right 28.75rem;
+    }
+}
+
+@media(min-width:95rem) {
+    .processOuterWrapper {
+        background-position: top 10rem right 35rem;
+    }
+}
+

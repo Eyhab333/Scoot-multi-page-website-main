@@ -1,0 +1,90 @@
+.hero {
+    width: 100vw;
+    min-height: 10rem;
+}
+.heroHeading,
+.heroHeadingOnly {
+    color: var(--main-color);
+    width: 83%;
+    margin: 1.25rem auto 0 auto;
+    margin-bottom: 1.5rem;
+    padding-top: 7.1875rem;
+}
+
+.heroHeadingOnly {
+    padding-top: 3.75rem;
+}
+
+.heroText {
+    width: 83%;
+    margin: auto;
+    margin-bottom: 2.125rem;
+}
+
+.heroBtn {
+    width: fit-content;
+    margin: auto;
+}
+
+@media(min-width: 48rem) {
+    .heroImageContainer {
+        width: 100vw;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+    }
+
+    .heroCircles{
+        position: relative;
+        left: 1.9375rem;
+    }
+
+    .heroHeadingOnly {
+        text-align: left;
+    }
+
+    .heroCirclesInPlainHeading {
+        position: relative;
+        bottom: 4.6875rem;
+        left: calc(100vw - 12.6875rem);
+    }
+
+    .heroLineImage {
+        display: none;
+    }
+}
+
+@media(min-width:87.5rem) {
+
+    .heroHeading {
+      width: 31.25rem;  
+      text-align: left;
+      margin-left: 10.3125rem;
+    }
+
+    .heroText {
+       width: 25.3125rem;
+       text-align: left;
+       margin-left: 16.25rem;
+    }
+
+    .heroImageContainer {
+        position: absolute;
+        top: 21.25rem;
+    }
+
+    .heroLineImage {
+       display: unset; 
+       position: relative;
+       top: -8.4375rem;
+       background-image: url('/patterns/line.svg');
+       height: 1rem;
+       width: 7.8125rem;
+       margin-right: 31.375rem;
+    }
+
+    .heroBtn {
+        margin-left: 16.25rem;
+    }
+}
